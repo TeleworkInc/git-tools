@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ $# -eq 0 ]; then echo "Please provide a command."; exit 1; fi
+
+for dr in $(ls);
+do
+cd $dr;
+$1;
+cd ..;
+done;
+exit 0;
