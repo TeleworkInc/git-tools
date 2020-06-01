@@ -1,0 +1,14 @@
+#!/bin/bash
+# for dir  in ./*;
+# do
+# 	thisdir=$(echo "${PWD##*/}")
+# 	dirname=$(echo $dir | cut -c 3-);
+# done;
+
+thisdir=$(echo "${PWD##*/}");
+
+mkdir -p "collated";
+cd collated;
+flattenpdf $(ls -v ../*.pdf);
+
+mv converted.pdf "$thisdir.pdf";
