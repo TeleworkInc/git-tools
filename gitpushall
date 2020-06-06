@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# push each child directory
+eachdir gitpush
+
+echo ""
+echo -- $(basename "$PWD") --
+
+# push this dir
+gitpush
