@@ -3,7 +3,7 @@
 # push each child directory
 eachdir gitpush
 
-echo "-- PARENT DIR --"
+echo "[PARENT DIR]"
 echo -- $(basename "$PWD") --
 
 # push this dir
