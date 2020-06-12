@@ -2,8 +2,6 @@
 if [ $# -ne 0 ]; then
 cd $1;
 fi
-git add --all
-git stage --all
-git commit -m "BULK AUTOMATIC COMMIT"
+gitcommit
 git push
 

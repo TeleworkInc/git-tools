@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+git add --all
+git stage --all
+git commit -m "BULK AUTOMATIC COMMIT"
