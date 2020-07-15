@@ -1,10 +1,7 @@
 #!/usr/bin/bash
 
-if [ -z $1 ]; then
-  COMMIT_MSG="BULK AUTOMATIC COMMIT: $(date)"
-else
-  COMMIT_MSG="$@"
-fi
+echo -e "Enter your commit message and press [ENTER]:\n"
+read COMMIT_MSG
 
 git add --all && \
 git stage --all && \
