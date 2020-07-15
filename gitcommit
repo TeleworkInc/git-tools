@@ -1,8 +1,12 @@
 #!/usr/bin/bash
 
-echo -e "Enter your commit message. [CTRL+D] to exit.\n"
-COMMIT_MSG=$(</dev/stdin)
+if [ -z "$1" ]; then
+  echo -e "Enter your commit message. [CTRL+D] to exit.\n"
+  COMMIT_MSG=$(</dev/stdin)
+else
+  COMMIT_MSG=$@
+fi
 
 git add --all && \
 git stage --all && \
-git commit -m "$COMMIT_MSG"
+git commit -m $"$COMMIT_MSG"
