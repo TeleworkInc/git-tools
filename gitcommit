@@ -4,7 +4,7 @@ if [ -z "$1" ]; then
   echo -e "Enter your commit message. [CTRL+D] to exit.\n"
   COMMIT_MSG=$(</dev/stdin)
 else
-  COMMIT_MSG=$@
+  COMMIT_MSG=$1
 fi
 
 git add --all && \
