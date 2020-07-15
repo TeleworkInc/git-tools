@@ -1,2 +1,5 @@
 #!/bin/bash
-git add --all && git stage --all && git commit -a
+git add --all &&
+git stage --all &&
+git commit -a &&
+git push
