@@ -1,4 +1,11 @@
 #!/usr/bin/bash
-git add --all
-git stage --all
-git commit -m "BULK AUTOMATIC COMMIT: $(date)"
+
+if [ -z $1 ]; then
+  COMMIT_MSG="BULK AUTOMATIC COMMIT: $(date)"
+else
+  COMMIT_MSG="$@"
+fi
+
+git add --all && \
+git stage --all && \
+git commit -m COMMIT_MSG

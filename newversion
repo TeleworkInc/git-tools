@@ -1,2 +1,5 @@
 #!/bin/bash
-yarn version --minor && gitpush && npm publish
+
+yarn version --minor &&
+gitpush &&
+npm publish
