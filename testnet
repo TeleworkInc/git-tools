@@ -1,3 +1,3 @@
 #!/bin/bash
 
-create_ap -n wlp5s0 TestNet TANGO-ECHO-SIERRA-TANGO-NINER
+create_ap -n wlp5s0 TestNet TELEWORK-TEST-NET123
