@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
-echo -e "Enter your commit message and press [ENTER]:\n"
-read COMMIT_MSG
+echo -e "Enter your commit message. [CTRL+D] to exit.\n"
+COMMIT_MSG="$(</dev/stdin)"
 
 git add --all && \
 git stage --all && \
