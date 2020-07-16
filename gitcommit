@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 if [ -z "$1" ]; then
-  echo -e "Enter your commit message. [CTRL+D] to exit.\n"
+  echo "Enter your commit message. [CTRL+D] to confirm, [CTRL+C] to cancel."
   COMMIT_MSG=$(</dev/stdin)
 else
   COMMIT_MSG=$1
