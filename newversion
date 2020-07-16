@@ -1,6 +1,7 @@
 #!/bin/bash
 
-gitcommit "Committing before version bump and push to npm." &&
-yarn version --minor &&
-npm publish &&
+gitcommit "Committing before version bump and push to npm."
+
+yarn version --minor && \
+npm publish && \
 gitcommit "Successfully bumped to new version and pushed to npm."
