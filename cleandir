@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo ""
+read -r -p "Press [ENTER] to delete this directory's contents. Press [CTRL+C] to exit."
+rm -rf ./*
+echo "Done."
