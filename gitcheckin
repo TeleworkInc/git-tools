@@ -1,6 +1,8 @@
 #!/bin/bash
 
-git add --all &&
-git stage --all &&
-gitcommit &&
+git add --all && \
+git stage --all && \
+gitcommit && \
 git push $@
+
+git checkin

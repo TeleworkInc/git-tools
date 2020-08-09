@@ -10,3 +10,5 @@ fi
 git add --all && \
 git stage --all && \
 git commit -m $"$COMMIT_MSG"
+
+exit 0
