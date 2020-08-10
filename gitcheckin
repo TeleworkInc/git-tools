@@ -4,5 +4,3 @@ git add --all && \
 git stage --all && \
 gitcommit && \
 git push $@
-
-git checkin
