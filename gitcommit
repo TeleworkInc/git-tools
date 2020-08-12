@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
-if [ -z "$1" ]; then
+if [ $# =eq 0 ]; then
   echo "Enter your commit message. [CTRL+D] to confirm, [CTRL+C] to cancel."
   COMMIT_MSG=$(</dev/stdin)
 else
-  COMMIT_MSG=$1
+  COMMIT_MSG="$@"
 fi
 
 git add --all && \

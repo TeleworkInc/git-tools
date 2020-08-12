@@ -1,12 +1,15 @@
 #!/bin/bash
-if [ $# -eq 0 ]; then echo "Please provide a command."; exit 1; fi
+if [ $# -eq 0 ]; then
+  echo "Please provide a command."
+  exit 1
+fi
 
-for dr in $(ls);
-do
-cd $dr;
-echo "-- $dr --";
-eval $1;
-cd ..;
-echo "";
-done;
-exit 0;
+for dr in $(ls);do
+  cd $dr
+  echo "-- $dr --"
+  echo -e "\nExecuting: '$@'\n" && $@
+  cd ..
+  echo ''
+done
+
+exit 0

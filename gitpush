@@ -1,8 +1,6 @@
 #!/bin/bash
-if [ $# -ne 0 ]; then
-cd $1;
-fi
-gitcommit "Committing changes before push to remote." && \
+
+gitcommit $@ && \
 git push
 
 exit 0
