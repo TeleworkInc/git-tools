@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [ $# =eq 0 ]; then
+if [ $# -eq 0 ]; then
   echo "Enter your commit message. [CTRL+D] to confirm, [CTRL+C] to cancel."
   COMMIT_MSG=$(</dev/stdin)
 else
