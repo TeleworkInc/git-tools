@@ -3,10 +3,10 @@
 MSG="Bulk automatic update"
 
 # push each child directory
-eachdir gitpush $MSG
+eachdir gitpush -m $MSG
 
 echo "[PARENT DIR]"
 echo -- $(basename "$PWD") --
 
 # push this dir
-gitpush $MSG
+gitpush -m $MSG
